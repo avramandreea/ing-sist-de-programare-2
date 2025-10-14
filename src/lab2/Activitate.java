@@ -2,6 +2,7 @@ package lab2;
 import java.util.HashSet;
 import java.util.Set;
 
+
 public class Activitate {
     private String nume;
     private Profesor coordonator;

@@ -41,6 +41,7 @@ public class Elev {
         activitati.remove(numeActivitate);
     }
 
+
     public boolean participaLaActivitate(String numeActivitate) {
         return activitati.contains(numeActivitate);
     }

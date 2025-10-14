@@ -13,7 +13,7 @@ import java.util.List;
         this.activitati = new HashMap<>();
     }
 
-    // Metode pentru gestionarea claselor
+
     public void adaugaClasa(String identificator, Clasa clasa) {
         clase.put(identificator, clasa);
         System.out.println("Clasa " + identificator + " a fost adăugată în școală.");
@@ -54,7 +54,7 @@ import java.util.List;
         }
     }
 
-    // Metode pentru gestionarea activităților
+
     public void adaugaActivitate(String numeActivitate, Activitate activitate) {
         activitati.put(numeActivitate, activitate);
         System.out.println("Activitatea '" + numeActivitate + "' a fost adăugată în școală.");
@@ -63,7 +63,7 @@ import java.util.List;
     public void eliminaActivitate(String numeActivitate) {
         Activitate activitate = activitati.remove(numeActivitate);
         if (activitate != null) {
-            // Eliminăm activitatea din lista fiecărui elev participant
+
             for (Elev elev : activitate.getParticipanti()) {
                 elev.eliminaActivitate(numeActivitate);
             }
@@ -91,7 +91,6 @@ import java.util.List;
         }
     }
 
-    // Metode de raportare
     public int getNumarClase() {
         return clase.size();
     }
@@ -114,7 +113,6 @@ import java.util.List;
             return;
         }
 
-        // Sortăm activitățile după numărul de participanți (descrescător)
         List<Map.Entry<String, Activitate>> listaActivitati =
                 new ArrayList<>(activitati.entrySet());
 

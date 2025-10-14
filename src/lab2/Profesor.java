@@ -9,6 +9,7 @@ public class Profesor {
         this.specializare = specializare;
     }
 
+
     public String getNume() {
         return nume;
     }

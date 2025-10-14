@@ -59,6 +59,7 @@ public class Main {
         scoala.inscriereElevLaActivitate(elev5, "Cor");
         scoala.inscriereElevLaActivitate(elev6, "Pictură");
 
+
         System.out.println();
         scoala.inscriereElevLaActivitate(elev1, "Fotbal");
 

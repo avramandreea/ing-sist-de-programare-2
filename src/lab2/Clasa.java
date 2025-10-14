@@ -32,6 +32,7 @@ public  class Clasa {
         }
     }
 
+
     public int getTotalElevi() {
         return elevi.size();
     }
